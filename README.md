@@ -33,4 +33,21 @@ int main()
 	}
 	printf("%d\n",n);
 }
+
+3.找倍數：
+
+![找倍數](https://ppt.cc/fIxw3x@.jpg)
+```c
+#include <stdio.h>
+int main()
+{
+	int a[10],ans=0;
+	for(int i=0;i<10;i++){
+	scanf("%d",&a[10]);
+	if(a[10]%3==0)
+	ans++;
+	}
+	
+	printf("%d\n",ans);
+}
 ```
