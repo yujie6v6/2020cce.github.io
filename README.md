@@ -33,6 +33,7 @@ int main()
 ```
 
 ## 3.找倍數
+連續讀入10個整數(1 – 1000)，找出所讀入的整數有幾個是3的倍數。
 ```c
 #include <stdio.h>
 int main()
@@ -45,5 +46,42 @@ int main()
 	}
 	
 	printf("%d\n",ans);
+}
+```
+
+## 4.整數轉換為等級
+輸入一個整數，如果所輸入的整數大於或等於90，則輸出A；
+如果輸入的整數小於90但大於或等於80則輸出B，
+如果小於80但大於或等於60，則輸出C；如為其他整數，則輸出F。
+
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b,ans=0;
+	scanf("%d%d",&a,&b);
+	for(int i=1;i<=b;i++){
+		if(a%i==0 && b%i==0)
+		ans=i;
+	}
+	
+	printf("%d %d\n",a/ans,b/ans);
+}
+```
+
+## 5.分式化簡
+輸入分式的分子及分母(分母不可為0)，將其化簡後的分式輸出。
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b,ans=0;
+	scanf("%d%d",&a,&b);
+	for(int i=1;i<=b;i++){
+		if(a%i==0 && b%i==0)
+		ans=i;
+	}
+	
+	printf("%d %d\n",a/ans,b/ans);
 }
 ```
