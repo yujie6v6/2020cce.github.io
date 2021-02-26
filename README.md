@@ -33,6 +33,7 @@ int main()
 	}
 	printf("%d\n",n);
 }
+```
 
 3.找倍數：
 
