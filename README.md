@@ -4,7 +4,7 @@
 
 1.找零錢 : 假設有50元、5元和1元等3種硬幣，請輸入一個金額，並顯示等同於該金額所需的最少硬幣組合。
 
-![找零錢](https://i.ibb.co/D70w7d9/1.jpg)
+![找零錢](https://ppt.cc/fer6jx@.jpg)
 ```c
 #include <stdio.h>
 int main()
