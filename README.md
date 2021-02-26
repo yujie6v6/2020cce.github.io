@@ -18,6 +18,8 @@ int main()
 ```
 
 2.因數個數 : 輸入一個正整數，顯示所有該正整數因數的個數。
+
+![因數個數](https://ppt.cc/f5Ocsx@.jpg)
 ```c
 #include <stdio.h>
 int main()
