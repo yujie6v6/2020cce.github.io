@@ -110,3 +110,65 @@ int main()
     printf("n1:%d n2:%d n3:%d\n",n1,n2,n3);
 }
 ```
+
+##讀入整數反序列印 
+設計一個程式，該程式可以連續讀入正整數(輸入0表示結束，至多不超過10個正整數)，之後將所輸入的正整數以相反序顯示在畫面上。
+
+```c
+#include <stdio.h>
+int a[1000];
+int main()
+{
+	int n=0;
+	for(int i=0;i<=1000;i++){
+		scanf("%d",&a[i]);
+		if(a[i]==0){ 
+		n=i;
+		break;
+		}
+	}
+	
+	for(int i=n-1;i>=0;i--){
+		printf("%d ",a[i]);
+	}
+	printf("\n");
+}
+```
+
+##A的B次方函數
+請撰寫一個函數MYPOWER(A,B)，可以計算A^B結果。
+
+```c
+#include <stdio.h>
+int MYPOWER(int a,int b)
+{
+	int ans=1;
+	for(int i=1;i<=b;i++)
+		ans*=a;
+		return ans;		
+}
+
+int main(void)
+{
+	int a,b;
+	scanf("%d%d",&a,&b);
+	printf("[%d]",MYPOWER(a,b));
+	return 0;
+}
+
+```
+
+##漸增數列相加
+輸入正整數n，計算1*2+2*3+3*4+…+(n-1)*n之和。
+```c
+#include <stdio.h>
+int main()
+{
+	int n,ans=0;
+	scanf("%d",&n);
+	for(int i=2;i<=n;i++){
+		ans+=(i-1)*i;
+	}
+	printf("%d\n",ans);
+}
+```
