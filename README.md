@@ -172,3 +172,35 @@ int main()
 	printf("%d\n",ans);
 }
 ```
+## 5.均標與前標計算
+輸入整數N, 再輸入N個同學的分數, 計算並且輸出均標(float 小數點後一位數), 均標是全部學生的平均分數, 再計算並且輸出前標(float 小數點後一位數), 本題的前標是大於或等於均標的同學的平均分數
+
+```c
+#include <stdio.h>
+int main()
+{
+	int n,a[100],sum=0,sumt=0,x=0;
+	float avg,avgt;
+	scanf("%d",&n);
+	for(int i=0;i<n;i++){
+		scanf("%d",&a[i]);
+	}
+	
+	for(int i=0;i<n;i++){
+		sum+=a[i];
+	}
+	avg=(float)sum/n;
+	printf("均標:%.1f\n",avg);
+	
+	for(int i=0;i<n;i++){
+	if(a[i]>=avg){
+		sumt+=a[i];
+		x++;
+		}
+	}
+	avgt=(float)sumt/x;
+	
+	printf("前標:%.1f\n",avgt);
+
+}
+```
