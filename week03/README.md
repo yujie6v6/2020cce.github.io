@@ -85,4 +85,22 @@ int main(){
 }
 ```
 
+## 計算陣列的平方值
+輸入一個整數N，再依序輸入N個整數置於陣列中，計算各元素的平方值，再列出此算出平方值後的陣列。
+```c
+#include <stdio.h>
+int a[100];
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++){
+		scanf("%d",&a[i]);
+		printf("%d,",a[i]*a[i]);
+	}
+	printf("\n");
+	
+}
+```
+
 
