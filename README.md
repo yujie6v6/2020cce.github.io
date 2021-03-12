@@ -277,3 +277,18 @@ int main()
         printf("p心裡的小紙條記的值是：%d\n",p);
 }
 ```
+
+## 指標範例4 (指標就是陣列，陣列就是指標)
+```c
+#include <stdio.h>
+#include <stdlib.h>
+int a[10];
+int main(){
+    int b[10];
+
+    int *p=(int*) malloc(sizeof(int)*10);
+
+    return 0;
+}
+```
+
