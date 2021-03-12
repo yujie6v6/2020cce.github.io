@@ -116,15 +116,14 @@ int main()
 
 ```c
 #include <stdio.h>
-int a[1000];
+int a[11];
 int main()
 {
 	int n=0;
-	for(int i=0;i<=1000;i++){
+	for(int i=0;i<10;i++){
 		scanf("%d",&a[i]);
-		if(a[i]==0){ 
-		n=i;
-		break;
+		if(a[i]==0) break;
+		n++;
 		}
 	}
 	
