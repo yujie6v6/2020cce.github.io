@@ -11,14 +11,14 @@ int main()
     *p=222;
 
         printfAll();
-        printf("p¤ß¸Ìªº¤p¯È±ø°Oªº­È¬O¡G%d\n",p);
+        printf("på¿ƒè£¡çš„å°ç´™æ¢è¨˜çš„å€¼æ˜¯ï¼š%d\n",p);
     p=p+2;
     *p=666;
 
         printfAll();
-        printf("p¤ß¸Ìªº¤p¯È±ø°Oªº­È¬O¡G%d\n",p);
+        printf("på¿ƒè£¡çš„å°ç´™æ¢è¨˜çš„å€¼æ˜¯ï¼š%d\n",p);
     p--;
     *p=555;
         printfAll();
-        printf("p¤ß¸Ìªº¤p¯È±ø°Oªº­È¬O¡G%d\n",p);
+        printf("på¿ƒè£¡çš„å°ç´™æ¢è¨˜çš„å€¼æ˜¯ï¼š%d\n",p);
 }
