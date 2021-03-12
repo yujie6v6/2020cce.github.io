@@ -146,4 +146,58 @@ int main()
 	printf("\n");
 }
 ```
+##  計程車資計算 
+輸入里程公尺數，輸出應付的車資。計程車資計算方式為：起跳100 元(2000公尺)，續跳5元(每500公尺)。
+```c
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	if (n<=2000) printf("100\n");
+	else printf("%d\n",((n-2000+499)/500)*5+100);
+}
+```
 
+## 兩數間可被5整除的整數
+兩數間可被5整除的整數 : 輸入兩個整數，找出兩數之間所有可以被5整除的整數。
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b,max,min;
+	scanf("%d%d",&a,&b);
+	if(a>b){
+		max=a;
+		min=b;
+	}
+	else {
+		max=b;
+		min=a;
+	}
+	for(int i=min;i<=max;i++){
+		if(i%5==0)
+		printf("%d\n",i);
+	}
+}
+```
+## 整數間最大距離 
+輸入3個相異整數，找出整數間最大的距離。
+```c
+#include <stdio.h>
+int a[10000];
+int main()
+{
+	int min,max;
+	for(int i=0;i<3;i++)
+	scanf("%d",&a[i]);
+	min=a[0];
+	max=a[0];
+	for(int i=0;i<3;i++){
+		if(min>a[i]) min=a[i];
+		if(max<a[i]) max=a[i];
+	}
+	printf("%d\n",max-min);
+}
+
+```
