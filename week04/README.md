@@ -9,8 +9,6 @@
 
 ## week04-4
 ![week04-4](https://user-images.githubusercontent.com/79676845/111729055-2239dc80-88a9-11eb-8e09-641147d54970.png)
-
-## week04-5
 ![week04-4printf](https://user-images.githubusercontent.com/79676845/111729068-28c85400-88a9-11eb-8668-ed00bc47e9f7.png)
 
 
