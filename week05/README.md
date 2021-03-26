@@ -51,3 +51,51 @@ int main()
     }
 }
 ```
+
+## 比較字串
+strcmp比較字串
+![55555](https://user-images.githubusercontent.com/79676845/112573331-072a1800-8e27-11eb-92e3-e8dceb6b230d.jpg)
+```c
+#include <stdio.h>
+#include <String.h>
+int main()
+{
+    char line[10]="majority";
+    char line2[10]="ask";
+    if(strcmp(line,line2)>0){
+        printf("左邊大\n");
+    } else {
+        printf("右邊大\n");
+    }
+}
+```
+
+## 字串排序
+
+將字串由小到大排序
+```c
+#include <stdio.h>
+#include <string.h>
+char line[100][10];
+int main()
+{
+	int N;
+	scanf("%d",&N);
+	for(int i=0;i<N;i++){
+		scanf("%s",line[i]);
+	}//(1)讀進來
+	char temp[10];//用來交換的 temp字串
+	for(int i=0;i<N;i++){
+		for(int j=i+1;j<N;j++){
+			if( strcmp(line[i],line[j])   >0){//(2)大小錯
+				strcpy(temp,line[i]); //temp=a;
+				strcpy(line[i],line[j]); //a=b;
+				strcpy(line[j],temp); //b=temp;
+			}
+		}
+	}
+	for(int i=0;i<N;i++){
+		printf("%s\n",line[i]);
+	}//(3)印出去
+}
+```
