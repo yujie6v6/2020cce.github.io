@@ -54,6 +54,8 @@ int main()
 
 ## 比較字串
 ![55555](https://user-images.githubusercontent.com/79676845/112573331-072a1800-8e27-11eb-92e3-e8dceb6b230d.jpg)
+![擷取_2021_03_26_10_41_28_245](https://user-images.githubusercontent.com/79676845/112573474-52442b00-8e27-11eb-9532-e29071d5c126.png)
+
 ```c
 #include <stdio.h>
 #include <String.h>
