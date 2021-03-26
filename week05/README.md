@@ -144,6 +144,21 @@ int main(void)
 
 ```
 
+```c
+#include <stdio.h>
+int f(int n)
+{
+	return (n>0)? n:-n; //如果符合輸出n,不是的話輸出-n
+}
+int main(void)
+{
+	int n;
+	scanf("%d",&n);
+	printf("[%d]",f(n));
+	return 0;
+}
+```
+
 ## N數之和
 輸入一個整數N，之後讀入N個整數，請輸出其和。 
 數字範圍：N=整數1 – 10，其餘整數1 – 100。 
