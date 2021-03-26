@@ -53,7 +53,6 @@ int main()
 ```
 
 ## 比較字串
-strcmp比較字串
 ![55555](https://user-images.githubusercontent.com/79676845/112573331-072a1800-8e27-11eb-92e3-e8dceb6b230d.jpg)
 ```c
 #include <stdio.h>
