@@ -44,6 +44,28 @@ int main()
 	else printf("NO\n");
 }
 ```
+沒有告訴幾位數
+```c
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	int i;
+	char a[100];
+	scanf("%s",&a);
+	
+	int len=strlen(a);
+	
+	for(i=0;i<len/2;i++){
+		if(a[i]!=a[len-1-i])break;
+	}
+	
+	if(i==len/2) printf("YES\n");
+	else printf("NO\n");
+	
+}
+```
+
 
 ## 函數反序排列數字
 設計一個函數f(n)，該函數可以傳回整數n的數字反序排列所組成的整數。 
