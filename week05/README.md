@@ -77,7 +77,7 @@ int main()
 ```c
 #include <stdio.h>
 #include <string.h>
-char line[100][10];
+char line[100][10]; //有100個裡面可以放10個字母
 int main()
 {
 	int N;
