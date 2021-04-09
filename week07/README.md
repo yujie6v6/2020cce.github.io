@@ -1,7 +1,7 @@
 ## 字串排序
 把字串由小自大排起來
 
-``c
+```c
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -29,4 +29,4 @@ int main()
 		printf("%s\n",line[i]);
 	}
 }
-``
+```
