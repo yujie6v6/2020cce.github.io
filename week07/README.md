@@ -1,4 +1,4 @@
-## 字串排序
+## 用qsort函式字串排序
 把字串由小自大排起來
 ![week07-2](https://user-images.githubusercontent.com/79676845/114121120-62c4cd00-9920-11eb-86ca-24333a8b4b73.png)
 
