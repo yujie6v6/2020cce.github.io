@@ -2,6 +2,7 @@
 把字串由小自大排起來
 ![week07-2](https://user-images.githubusercontent.com/79676845/114121739-7d4b7600-9921-11eb-9b96-c5cc5256406f.jpg)
 
+```c
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
