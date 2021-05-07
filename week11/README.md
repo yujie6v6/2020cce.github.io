@@ -65,3 +65,55 @@ int main()
     printf("%c %d\n",box.c,box.ans);
 }
 ```
+
+## 進階題：兩數間可被7整除的數
+輸入兩個整數，找出兩數之間所有可能被7整除的整數。
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	scanf("%d%d",&a,&b);
+	if(a>b){
+		for(int i=b;i<=a;i++){
+			if(i%7==0) printf("%d ",i);
+		}
+	}
+	
+	if(a<b){
+		for(int i=a;i<=b;i++){
+			if(i%7==0) printf("%d ",i);
+		}
+	}
+	
+}
+
+```
+
+## 進階題：奇數之和
+輸入一個整數N，輸出由1至N中間的奇數和。
+```c
+#include <stdio.h>
+int main()
+{
+	int n,ans=0;
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++){
+		if(i%2==1) ans+=i;
+	}
+	printf("%d",ans);
+}
+```
+
+## 進階題：利用自訂函式最大值max與最小值min求出兩者之差
+輸入四個正整數後，利用函式判斷最大值與最小值，並輸出最大值減最小值之差
+```c
+
+```
+
+
+## 進階題：字串中的數字個數
+讀入一個至多80個字的字串，找出字串中有多少個數字。
+```c
+
+```
