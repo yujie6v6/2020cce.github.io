@@ -25,3 +25,40 @@ int main()
 
 }
 ```
+
+## struct 結構1
+![week11-3](https://user-images.githubusercontent.com/79676845/117391028-c2af9300-af21-11eb-9f84-f1ddc080fb10.png)
+```c
+#include <stdio.h>
+struct data{
+    int ans;
+    char c;
+};
+
+struct data box;
+int main()
+{
+    box.ans=1;
+    box.c='A';
+
+    printf("%c %d\n",box.c,box.ans);
+}
+```
+
+## struct 結構2
+![45616898456](https://user-images.githubusercontent.com/79676845/117391574-c4c62180-af22-11eb-9827-ac57743ad045.jpg)
+#include <stdio.h>
+typedef struct data{
+    int ans;
+    char c;
+}DATA;
+
+DATA box;
+
+int main()
+{
+    box.ans=1;
+    box.c='A';
+
+    printf("%c %d\n",box.c,box.ans);
+}
