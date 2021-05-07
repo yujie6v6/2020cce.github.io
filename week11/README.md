@@ -108,6 +108,29 @@ int main()
 ## 進階題：利用自訂函式最大值max與最小值min求出兩者之差
 輸入四個正整數後，利用函式判斷最大值與最小值，並輸出最大值減最小值之差
 ```c
+int max(int a,int b,int c,int d)
+{
+	int x=a;
+	if(x<b) x=b;
+	if(x<c) x=c;
+	if(x<d) x=d;
+	return x;
+}
+
+int min(int a,int b,int c,int d)
+{
+	int x=a;
+	if(x>b) x=b;
+	if(x>c) x=c;
+	if(x>d) x=d;
+	return x;
+}
+
+int main(){
+  int a,b,c,d;cin>>a>>b>>c>>d;
+  cout<<(max(a,b,c,d)-min(a,b,c,d));
+  return 0;
+}
 
 ```
 
@@ -115,5 +138,18 @@ int main()
 ## 進階題：字串中的數字個數
 讀入一個至多80個字的字串，找出字串中有多少個數字。
 ```c
+#include <stdio.h>
+int main()
+{
+	char a[80];
+	scanf("%s",&a);
+	int i=0,ans=0;
+	while(a[i]!='\0')
+	{
+		if(a[i]>='0' && a[i]<='9') ans++;
+		i++;
+	}
+	printf("%d",ans);
+}
 
 ```
