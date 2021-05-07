@@ -47,6 +47,8 @@ int main()
 
 ## struct 結構2
 ![45616898456](https://user-images.githubusercontent.com/79676845/117391574-c4c62180-af22-11eb-9827-ac57743ad045.jpg)
+
+```c
 #include <stdio.h>
 typedef struct data{
     int ans;
@@ -62,3 +64,4 @@ int main()
 
     printf("%c %d\n",box.c,box.ans);
 }
+```
