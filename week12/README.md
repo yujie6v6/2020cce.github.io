@@ -23,7 +23,7 @@ int main()
 }
  ```
 ##  UVA10062 Tell me the frequencies!
-![10062](https://user-images.githubusercontent.com/79676845/118211509-cd78a380-b49e-11eb-9ab2-d742572d75ef.jp
+![10062](https://user-images.githubusercontent.com/79676845/118211509-cd78a380-b49e-11eb-9ab2-d742572d75ef.jpg
 
 ```c
 #include <stdio.h>
