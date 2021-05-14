@@ -24,7 +24,7 @@ int main()
  ```
 ##  UVA10062 Tell me the frequencies!
 ![10062](https://user-images.githubusercontent.com/79676845/118211593-ee40f900-b49e-11eb-80a6-426daf357085.jpg)
-
+題目說明:輸入一串字元，紀錄字元數目，並將其ASCll碼顯示出來。
 
 ```c
 #include <stdio.h>
