@@ -74,3 +74,40 @@ int main()
 }
 
 ```
+
+## UVA299:Train Swapping
+![train](https://user-images.githubusercontent.com/79676845/118219983-2818fc00-b4ad-11eb-8728-042064b2867a.jpg)
+![week12-5配合泡泡排序法, 完成 UVA299](https://user-images.githubusercontent.com/79676845/118220036-43840700-b4ad-11eb-940b-d465746deb2b.png)
+#include <Stdio.h>
+int a[100];
+int main()
+{
+	int T;
+	scanf("%d",&T);
+	for(int t=0;t<T;t++){
+		int n;
+		scanf("%d",&n);
+		for(int i=0;i<n;i++){
+			scanf("%d",&a[i]);
+		}
+		
+		int ans=0;
+		
+		for(int k=0;k<n-1;k++){
+			for(int i=0;i<n-1;i++){
+				if(a[i]>a[i+1]){
+					int temp=a[i];
+					a[i]=a[i+1];
+					a[i+1]=temp;
+					ans++;
+				}
+			}
+		}
+		printf("Optimal train swapping takes %d swaps.\n",ans);
+	}
+}
+
+## UVA11321 Sort! Sort!! and Sort!!! 
+![sort](https://user-images.githubusercontent.com/79676845/118220117-729a7880-b4ad-11eb-856a-efa192991802.jpg)
+![week12-7全部完成,回家再寫](https://user-images.githubusercontent.com/79676845/118220123-78905980-b4ad-11eb-901a-f9cc7aa2c2e7.png)
+
