@@ -44,19 +44,21 @@ void setup(){
  size(400,200);
  textSize(30);
  for(int i=0;i<49;i++) a[i]=i+1;
+ for(int i=0;i<10000;i++){
+ int i1=(int) random(49),i2=(int) random(49);
+ int temp=a[i1];a[i1]=a[i2];a[i2]=temp;
+   }
 }
+int N=0;
 void draw(){
  background(180,156,228);
- for(int i=0;i<6;i++){//49指秀6個數
+ for(int i=0;i<N;i++){//49指秀6個數
   fill(255);ellipse(50+i*50,100,40,40); //白球
   textAlign(CENTER,CENTER); //對齊中間
   fill(0);text(a[i],50+i*50,100); //黑字，50+i*50文字之間距離
  }
 }
 void mousePressed(){
- for(int i=0;i<10000;i++){
- int i1=(int) random(49),i2=(int) random(49);
- int temp=a[i1];a[i1]=a[i2];a[i2]=temp;
-   }
+ N++;
 }
 ```
