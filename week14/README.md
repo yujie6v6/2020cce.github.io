@@ -37,6 +37,7 @@ void mousePressed(){
 ```
 
 ## 大樂透
+有小bug數字可以一直按
 ```javascript
 int []a= new int[49]; //java陣列宣告
 void setup(){
