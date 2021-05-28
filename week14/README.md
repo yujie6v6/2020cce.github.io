@@ -1,6 +1,6 @@
 # JAVA互動式程式設計
 ## 亂數抽籤
-```java
+```javascript 
 void setup(){
  size(300,200);
  textSize(30);
