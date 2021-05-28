@@ -1,6 +1,6 @@
 # JAVA互動式程式設計
 ## 亂數抽籤
-```java 
+```javascript 
 void setup(){
  size(300,200);
  textSize(30);
@@ -16,7 +16,7 @@ void mousePressed(){
 ```
 
 ## 洗牌
-```c
+```javascript
 int []a={1,2,3,4,5,6,7,8,9,10};
 void setup(){
   size(400,200);
@@ -37,7 +37,7 @@ void mousePressed(){
 ```
 
 ## 大樂透
-```c
+```javascript
 int []a= new int[49]; //java陣列宣告
 void setup(){
  size(400,200);
