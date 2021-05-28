@@ -47,7 +47,9 @@ void setup(){
 void draw(){
  background(180,156,228);
  for(int i=0;i<6;i++){//49指秀6個數
-  text(a[i],i*50,100); //i*50文字之間距離
+  fill(255);ellipse(50+i*50,100,40,40); //白球
+  textAlign(CENTER,CENTER); //對齊中間
+  fill(0);text(a[i],50+i*50,100); //黑字，50+i*50文字之間距離
  }
 }
 void mousePressed(){
