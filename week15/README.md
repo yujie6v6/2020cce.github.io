@@ -17,3 +17,6 @@ void setup(){
   }
  }
  ```
+ ## 將processing弄成網頁
+ 新增模式ps.js將java程式碼用下面網站轉換就可以了
+ http://faculty.purchase.edu/joseph.mckay/p5jsconverter.html
