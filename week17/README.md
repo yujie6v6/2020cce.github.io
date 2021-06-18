@@ -21,9 +21,9 @@ void keyPressed(){
  if(key>='A' && key<='Z') line=line+key;
  if(key == BACKSPACE && len>0) line=line.substring(0,len-1);
  if(key==ENTER){ //算分數
-  if(line.equals(Q[Qi])==true){ //如果line=Q[Qi]
+  if(line.equals(Q[Qi])==true){
    score ++; 
-   Qi++; //換下一筆Q[0]變Q[1]
+   Qi=int(random(Q.  length)); //換下一筆Q[0]變Q[1]
    line="";
   }else score --;
  }
