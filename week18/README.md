@@ -33,7 +33,7 @@ void draw(){
 
 ```
 
-## 撲克牌洗牌後抽五張
+## 撲克牌洗牌後發牌
 ```c
 String []face={"Spade","Heart","Dimand","Club"};
 String []Num={"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
@@ -69,4 +69,5 @@ drawCard( Card[i], i*110, 0 );
 void mousePressed(){
 shuffleCard();
 }
+
 
