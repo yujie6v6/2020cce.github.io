@@ -1,4 +1,6 @@
 ## UVA 10783
+![10783_page-0001](https://user-images.githubusercontent.com/79676845/135036536-11caf92f-120d-469d-bed5-9ee315d2c132.jpg)
+
 ```c
 #include <stdio.h>
 int main()
