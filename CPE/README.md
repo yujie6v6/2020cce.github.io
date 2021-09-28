@@ -27,7 +27,6 @@ int main()
 ![100_page-0002](https://user-images.githubusercontent.com/79676845/135036835-8110ca68-4e0d-45c9-b1aa-481a215b18bf.jpg)
 ![2021-09-28 (1)](https://user-images.githubusercontent.com/79676845/135040223-4e498a58-cb28-4a65-a8d2-b0d7e5e4ce27.png)
 ```c
-#include <stdio.h>
 int cycleLength(int n){
 	int length=1;
 	while(n!=1){
@@ -46,10 +45,19 @@ int main(void){
 	int i,j,max;
 	while(scanf("%d %d",&i,&j)!=EOF){
 		max=1;
-		for(int n=i;n<=j;n++){
-			int len=cycleLength(n);
-			if(len>max)
-			max=len;
+		if(i<=j){
+			for(int n=i;n<=j;n++){
+				int len=cycleLength(n);
+				if(len>max)
+				max=len;
+			}
+		}
+		else{
+			for(int n=j;n<=i;n++){
+				int len=cycleLength(n);
+				if(len>max)
+				max=len;
+			}
 		}
 		printf("%d %d %d\n",i,j,max);
 	}
