@@ -23,4 +23,4 @@ int main()
 ## UVA 100
 
 ![100_page-0001](https://user-images.githubusercontent.com/79676845/135036726-f22876cd-b139-407f-a9a1-a67b73196fd2.jpg)
-![100_page-00021](https://user-images.githubusercontent.com/79676845/135036740-fd743299-1d76-41d8-a754-5347d5c937da.jpg)
+![100_page-0002](https://user-images.githubusercontent.com/79676845/135036835-8110ca68-4e0d-45c9-b1aa-481a215b18bf.jpg)
