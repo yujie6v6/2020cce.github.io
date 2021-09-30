@@ -63,3 +63,30 @@ int main(void){
 	}
 }
 ```
+
+## UVA11417
+![0001](https://user-images.githubusercontent.com/79676845/135409912-4a8a22d0-dac9-4211-a7d1-02aaddd4c866.jpg)
+```C
+#include <stdio.h>
+int gcd(int a,int b)
+{
+	if(a==0) return b;
+	else return gcd(b%a,a);
+}
+
+int main()
+{
+	int i,j,n,sum;
+	scanf("%d",&n);
+	while(n){
+		sum=0;
+		for(i=1;i<n;i++){
+			for(j=i+1;j<=n;j++)
+				sum+=gcd(i,j);
+		}
+		printf("%d\n",sum);
+		scanf("%d",&n);
+	}
+	return 0;
+}
+```
