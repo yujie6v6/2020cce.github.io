@@ -92,7 +92,7 @@ int main()
 ```
 
 ## UVA10035
-![1003510241024_1](https://user-images.githubusercontent.com/79676845/136665188-6bc75f08-5621-4432-9cf6-ac877bd61f02.jpg)
+![image](https://user-images.githubusercontent.com/79676845/136665757-fa594cfc-d3ce-49e5-9e0c-f7ef23332d97.png)
 
 ```C
 #include <stdio.h>
@@ -142,3 +142,23 @@ int main()
 }
 
 ```
+
+## UVA 10055
+![image](https://user-images.githubusercontent.com/79676845/136665746-09d0e7e2-73b5-41e6-82bb-19bc8153b492.png)
+
+
+```C
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+	long long a,b;
+	while(scanf("%lld%lld",&a,&b)!=EOF){
+		printf("%lld\n",llabs(a-b));
+	}
+}
+```
+
+## UVA 10929
+![image](https://user-images.githubusercontent.com/79676845/136665774-c2b5a7f2-ae78-4ac9-9ea2-f18f8bbc287f.png)
+
