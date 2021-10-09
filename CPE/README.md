@@ -92,8 +92,7 @@ int main()
 ```
 
 ## UVA10035
-![1003510241024_1](https://user-images.githubusercontent.com/79676845/136662915-61169ce8-3479-4f72-bffb-9649bb301933.jpg)
-
+![1003510241024_1](https://user-images.githubusercontent.com/79676845/136665188-6bc75f08-5621-4432-9cf6-ac877bd61f02.jpg)
 
 ```C
 #include <stdio.h>
@@ -125,4 +124,21 @@ int main()
 	}
 	return 0;
 }
+```
+
+## UVA 10071
+![image](https://user-images.githubusercontent.com/79676845/136665224-5ce29e2a-193f-4a3d-9bbf-2add4e9d34e5.png)
+
+
+```C
+#include <stdio.h>
+int main()
+{
+	int v,t,s;
+	while(scanf("%d%d",&v,&t)!=EOF){
+		int s=2*v*t;
+		printf("%d\n",s);
+	}
+}
+
 ```
