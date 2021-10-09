@@ -90,3 +90,39 @@ int main()
 	return 0;
 }
 ```
+
+## UVA10035
+![1003510241024_1](https://user-images.githubusercontent.com/79676845/136662915-61169ce8-3479-4f72-bffb-9649bb301933.jpg)
+
+
+```C
+#include <stdio.h>
+
+int main()
+{
+	int a,b,c;
+	while(1){
+		scanf("%d%d",&a,&b);
+		if(a==0 && b==0) break;
+		
+		int carry=0,ans=0;
+		
+		while(a!=0||b!=0){
+			c=a%10+b%10+carry;
+			if(c>=10){
+				carry=1;			
+				ans++;					
+			}
+			else{
+				carry=0;
+			}
+			a/=10;
+			b/=10;
+		}
+		if(ans==0) printf("No carry operation.\n");
+		else if(ans==1) printf("1 carry operation.\n");
+		else printf("%d carry operations.\n",ans);
+	}
+	return 0;
+}
+```
