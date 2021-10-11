@@ -161,4 +161,34 @@ int main()
 
 ## UVA 10929
 ![image](https://user-images.githubusercontent.com/79676845/136665774-c2b5a7f2-ae78-4ac9-9ea2-f18f8bbc287f.png)
-
+```c
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+ char number[1001];
+ while (scanf("%s", number)!=EOF)
+ {
+  
+  int i;
+  long int length=strlen(number);///讀出字串長度
+  if(length==1 && number[0]=='0')///判斷是否只有一個位數並且輸入的該數不能為零 
+   break;
+  int odd=0, even=0;
+  for(i=0; i<length; i++)///分別做奇偶數位的相加
+  {
+   if(i%2==0)
+    odd=odd+(number[i]-'0');
+   else
+    even=even+(number[i]-'0');
+  }
+  if((odd-even)%11==0)//判斷
+   printf("%s is a multiple of 11.\n", number);
+  else
+   printf("%s is not a multiple of 11.\n", number); 
+  
+ }
+ 
+ 
+}
+```
