@@ -192,3 +192,44 @@ int main()
  
 }
 ```
+
+## UVa10268
+![2021-10-16](https://user-images.githubusercontent.com/79676845/137588000-1e1123d4-441a-4004-8e11-e687a52be6d4.png)
+
+```c
+#include <stdio.h>
+int a[10000];
+int main()
+{
+	int n,i,x,y;
+	while (scanf("%d", &x) != EOF){
+	for(n=0;; n++){
+		scanf("%d", &a[n]);
+		if (getchar()== '\n') break;
+	}
+		y=a[0]*n;
+		for(i=1;i<n;i++){
+			y=y*x+a[i]*(n-i);
+		}
+		printf("%d\n",y);
+	}
+	return 0;
+}
+
+## uva10812
+![2021-10-16 (1)](https://user-images.githubusercontent.com/79676845/137588006-c1822969-3dee-490e-bb1a-fe16bde4412d.png)
+
+```c
+#include <stdio.h>
+int main()
+{
+	int n,s,d;
+	scanf("%d",&n);
+	for(int i=0;i<n;i++){
+		scanf("%d%d",&s,&d);
+		if(s<d ||s<0||d<0 ||(s+d)%2==1) printf("impossible\n");
+		else printf("%d %d\n",(s+d)/2,(s-d)/2);
+	}
+}
+```
+```
