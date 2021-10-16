@@ -194,7 +194,8 @@ int main()
 ```
 
 ## UVa10268
-![2021-10-16](https://user-images.githubusercontent.com/79676845/137588000-1e1123d4-441a-4004-8e11-e687a52be6d4.png)
+![2021-10-16 (1)](https://user-images.githubusercontent.com/79676845/137589177-4779eeb7-fb12-4fcf-a29e-4245cf7a1b10.png)
+
 
 ```c
 #include <stdio.h>
@@ -215,9 +216,11 @@ int main()
 	}
 	return 0;
 }
+```
 
 ## uva10812
-![2021-10-16 (1)](https://user-images.githubusercontent.com/79676845/137588006-c1822969-3dee-490e-bb1a-fe16bde4412d.png)
+![2021-10-16](https://user-images.githubusercontent.com/79676845/137589183-cf9a8f73-6974-4293-a36c-30091e9d5f03.png)
+
 
 ```c
 #include <stdio.h>
@@ -232,4 +235,4 @@ int main()
 	}
 }
 ```
-```
+
